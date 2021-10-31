@@ -2,9 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[Detailed code documented here](https://github.com/nairobee/mock-video-conferencing/blob/main/src/App.js)
 
-In the project directory, you can run:
+## Run Application
+
+To start the app
+Make sure you have node version 10 or higher installed.  
+Do `npm install` and  
+then `npm start`
 
 ### `npm start`
 
