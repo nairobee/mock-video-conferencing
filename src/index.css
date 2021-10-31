@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #101010;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, html {
+  height: 100%;
+}
+* { box-sizing: border-box }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-container .video-card {
+  border: 1em;
+  transition: transform 1s;
+  height: 15%;
+  width: 20%;
+  margin: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.main-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.video-card p {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  position: relative;
+}
+
+.button-top, .button-bottom {
+  padding: 1.5rem;
+}
+
+button {
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.main-container .video-card :hover, :focus {
+  transition: .2s linear;
+  transform: scale(1.3);
+ }
+
+button.prev, button.next {
+  display: flex; font-size: 32px;
+  align-items: center; justify-content: center;
+  color: #FFF; background-color: #333;
+  border-radius: 50%;
+  width: 44px; height: 44px;
+}
+.wrapper {
+  position: relative;
+}
+button.prev {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+button.next {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
